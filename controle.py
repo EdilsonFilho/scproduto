@@ -1,5 +1,4 @@
-from PyQt5 import uic
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, uic
 import sys
 
 def funcao_principal():
@@ -7,7 +6,7 @@ def funcao_principal():
 
 
 app=QtWidgets.QApplication([])
-formulario=uic.loadVi("formulario.ui")
+formulario= uic.loadUi("formulario.ui")
 formulario.pushButton.clicked.connect(funcao_principal)
 
 formulario.show()
